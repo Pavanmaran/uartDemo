@@ -2,9 +2,9 @@
   Truck-07 · Simple UART protocol - SENDER (ESP32)
   Every 2 s sends:   <DATA,91.4,62,73.4>     (temp, speed, fuel)
   and waits for:     <OK>                    (max 3 tries)
-
   Board wiring (7Semi ESP32-S3 + EC200U): ESP32 TX=GPIO13 -> EC200 UART1 RX, ESP32 RX=GPIO12 <- EC200 UART1 TX
 */
+
 #include <Arduino.h>
 
 HardwareSerial modemUart(2);           // UART2
